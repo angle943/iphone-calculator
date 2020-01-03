@@ -1,0 +1,35 @@
+.Button {
+  align-items: center;
+  background: #333;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  font-size: 45px;
+  height: 110px;
+  justify-content: center;
+  width: 110px;
+  transition: filter 0.3s ease-in;
+}
+
+.Button:active,
+.Button:focus {
+  filter: brightness(120%);
+}
+
+.Button.zero {
+  width: 250px;
+  grid-column: 1 / span 2;
+  border-radius: 57.5px;
+  position: relative;
+  justify-content: flex-start;
+  padding-left: 43px;
+}
+
+.Button.function {
+  color: black;
+  background: #a5a5a5;
+}
+
+.Button.operator {
+  background: #f1a33c;
+}
